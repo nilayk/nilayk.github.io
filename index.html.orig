@@ -322,7 +322,11 @@
 
         @media (max-width: 768px) and (orientation: landscape) {
             body {
+<<<<<<< HEAD
+                font-size: 13px;
+=======
                 font-size: 13px !important;
+>>>>>>> update/202601
             }
 
             .page {
@@ -330,15 +334,38 @@
             }
 
             h1 {
+<<<<<<< HEAD
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 17px;
+=======
                 font-size: 26px !important;
             }
 
             h2 {
                 font-size: 17px !important;
+>>>>>>> update/202601
             }
 
             .job-title,
             .degree {
+<<<<<<< HEAD
+                font-size: 15px;
+            }
+
+            .contact-info {
+                font-size: 13px;
+            }
+
+            .location {
+                font-size: 13px;
+            }
+
+            .introduction {
+                font-size: 13px;
+=======
                 font-size: 15px !important;
             }
 
@@ -360,6 +387,7 @@
 
             li {
                 font-size: 13px !important;
+>>>>>>> update/202601
             }
 
             .contact-info span:not(:last-child)::after {
@@ -374,7 +402,11 @@
                 justify-content: space-between;
                 align-items: baseline;
                 gap: 12px;
+<<<<<<< HEAD
+                font-size: 13px;
+=======
                 font-size: 13px !important;
+>>>>>>> update/202601
             }
         }
 
