@@ -7,26 +7,26 @@
 
 ## About Me
 
-I'm a software engineer with 14+ years of experience building scalable, high-performance systems in ad tech, full-stack development, and distributed computing. I enjoy solving complex engineering challenges and making systems run faster, smarter, and more efficiently.
+Software engineer with 14+ years building high-scale, low-latency systems in ad tech and distributed platforms. Focused on system design, performance, reliability, integrations (SSP/DSP), and analytics/automation tooling. Lead production support and incident response.
 
 ---
 
 ## 🛠️ Technical Skills
 
-### Programming Languages
-C#, .NET Core, ASP.NET, JavaScript, Java, PHP, Python, VB.NET, SQL
+### Distributed Systems & Architecture
+High-scale, low-latency serving systems; distributed platform design; event-driven architectures; in-memory serving caches/entity lookups; aggregation pipelines; edge/CDN delivery; SSP/DSP integrations
 
-### Databases & Streaming  
-MongoDB, Redis, Microsoft SQL Server, Apache Druid, Amazon Kinesis
+### Data & Real-Time Systems
+MongoDB, Redis, Microsoft SQL Server, Apache Druid, Amazon Kinesis, RabbitMQ
 
 ### Cloud & Infrastructure
-Azure App Services, AWS (EC2, S3, Kinesis), Terraform, Cloudflare
+Azure App Services, AWS (EC2, S3, Kinesis), Cloudflare, Docker, Terraform
 
-### Development Tools & Frameworks
-ASP.NET MVC, NHibernate, jQuery, Git, TeamCity
+### DevOps / CI/CD / Observability
+TeamCity, GitHub, New Relic, Kibana, Git
 
-### Specialties
-High-scale ad tech, distributed systems, real-time data processing, fraud detection, performance optimization, system design
+### Languages
+C#, SQL, JavaScript, Python, Java, PHP, VB.NET
 
 ---
 
@@ -35,22 +35,26 @@ High-scale ad tech, distributed systems, real-time data processing, fraud detect
 ### Senior Software Engineer
 **AdSupply Inc** | *June 2011 - Present* | Culver City, CA
 
-Senior engineer behind the core architecture of AdSupply's real-time ad-exchange platform, designed to handle over 1 billion daily ad requests. Spearheaded efforts to evolve the platform for distributed computing, system resilience, fraud mitigation, and performance-critical delivery pipelines across a hybrid cloud stack.
+Senior engineer on a real-time ad exchange and serving platform, focused on distributed systems, low-latency delivery, production reliability, and fraud mitigation. Contributed to .NET Framework to .NET Core modernization across a hybrid cloud environment (Azure and AWS).
 
 **Key Achievements:**
-- Redesigned the ad-serving engine into a distributed, cloud-native architecture across Azure and AWS, cutting infrastructure costs by 50% and enabling scalable, cross-platform deployments
-- Achieved sub-100ms response times through low-latency integration with MongoDB, Redis, and Amazon Kinesis, boosting eCPM and improving delivery reliability
-- Developed and maintained high-revenue ad formats (popunders, floating pushes, programmatic), driving 60%+ of impressions and increasing direct campaign spend by 15%
-- Served on infrastructure incident response team with on-call duties, led issue triage, root-cause remediation, and deployment safeguards like staged rollouts and alerting
-- Co-developed a patented proxy system to bypass content blockers, increasing publisher network revenue by 20%
-- Built a real-time rules engine on Apache Druid with a custom internal DSL for bid filtering, campaign control, and advertiser automation
-- Designed CDN, asset servers, and edge-compute services, reducing hardware costs while minimizing response times
-- Led efforts to identify and mitigate ad fraud, ensuring cleaner traffic and achieving 90%+ viewability (Moat) and >99% human engagement
-- Developed ASP.NET MVC business tools and JavaScript analytics plugins, making data management and visualization easier for internal teams
+- Optimized the core ad exchange and serving platform and contributed to .NET Framework to .NET Core modernization
+- Supported low-latency ad delivery at scale (approx. 1B+ daily requests; sub-100ms responses), integrating with multiple SSPs and DSPs
+- Tuned critical data paths with MongoDB and Redis, improving maintainability and performance of hot codepaths
+- Implemented pub/sub messaging to propagate database updates to live serving nodes, enabling in-memory entity lookups and reducing database reads on the request path
+- Improved reliability with production safeguards, including Cloudflare-based controls to mitigate traffic anomalies and overload
+- Enhanced observability via New Relic instrumentation/configuration and operational diagnostics (including Kibana)
+- Owned fraud mitigation initiatives within the delivery pipeline to improve traffic quality and revenue integrity
+- Originated the Web Push ad format concept; built the initial prototype and early integrations; led subsequent team expansion
+- Owned ad unit delivery scripts and ad tags across browsers and partner constraints; led content-blocker compatibility work to improve delivery under common blocking techniques
+- Built internal tooling and automation: ASP.NET Core apps, JavaScript analytics utilities, and Druid-based tracking and aggregation workflows
+- Led support engineering and production issue resolution; participated in incident response/on-call and drove code/design reviews with senior engineers
+
+*Selected initiatives: Adblock compatibility; compliance-driven flow and parameter changes; cross-browser tag debugging; overload and timeout mitigation; observability and runtime diagnostics improvements.*
 
 ---
 
-### Software Engineer
+### Software Engineer (Concurrent)
 **EventSorbet** | *December 2011 - April 2013* | Santa Monica, CA
 
 An early-stage startup developing an event management platform, I worked as a Software Engineer, primarily focused on building and enhancing core platform features.
@@ -85,19 +89,12 @@ Joined a Series A startup focused on building an online platform to help green s
 
 ---
 
-### Internship Trainee
-**Infosys Technologies Ltd.** | *January 2009 - May 2009* | Mysuru, India
-
-Completed a 2-month training in Java technologies and contributed to a mobile app project, gaining hands-on experience in Java development, mobile app design, and database integration.
-
----
-
 ## 🎓 Education
 
-### Master of Science in Computer Science
+### M.S. in Computer Science
 **University of Southern California** | *2009 - 2011* | Los Angeles, CA
 
-### Bachelor of Technology in Computer Science Engineering  
+### B.Tech. in Computer Science Engineering
 **Jaypee Institute of Information Technology** | *2005 - 2009* | NOIDA, India 
 
 ---
@@ -110,4 +107,4 @@ I'm always interested in discussing new opportunities, technical challenges, and
 
 ---
 
-*Last updated: July 2025*
+*Last updated: January 2026*

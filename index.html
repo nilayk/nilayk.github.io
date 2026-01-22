@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <title>Nilay Khandelwal - Resume</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display:wght@400;700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
@@ -124,7 +129,7 @@
 
         .summary {
             margin-bottom: 8px;
-            text-align: justify;
+            text-align: left;
         }
 
         ul {
@@ -134,7 +139,7 @@
 
         li {
             margin-bottom: 4px;
-            text-align: justify;
+            text-align: left;
         }
 
         .skills-group {
@@ -181,6 +186,14 @@
         .print-button:hover,
         .download-button:hover {
             background-color: #34495e;
+        }
+
+        .introduction {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.6;
         }
 
         /* Mobile Responsiveness */
@@ -291,44 +304,131 @@
             }
         }
 
-        .introduction {
-            margin-bottom: 12px;
-            padding-bottom: 12px;
-            text-align: justify;
-            font-size: 13px;
-            line-height: 1.6;
-        }
-
         @media print {
-            body {
-                padding: 0;
-                background-color: white;
-            }
 
-            .page {
-                width: 100%;
-                box-shadow: none;
-                padding: 0in;
-                size: letter;
-                margin: 0;
+            html,
+            body {
+                padding: 0 !important;
+                margin: 0 !important;
+                background: #ffffff !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+
+
+                .experience-item,
+                .education-item {
+                    break-inside: auto !important;
+                    page-break-inside: auto !important;
+                }
+
+                .experience-item .job-title,
+                .experience-item .company-details,
+                .experience-item .location,
+                .experience-item .summary,
+                .education-item .degree,
+                .education-item .education-details,
+                .education-item .location {
+                    break-after: avoid !important;
+                    page-break-after: avoid !important;
+                }
+
+                .experience-item ul,
+                .education-item ul {
+                    break-inside: auto !important;
+                    page-break-inside: auto !important;
+                }
+
+                p,
+                li {
+                    orphans: 2;
+                    widows: 2;
+                }
             }
 
             .action-buttons {
                 display: none !important;
             }
 
+            .page {
+                width: 100% !important;
+                max-width: none !important;
+                min-height: auto !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                background: #ffffff !important;
+                box-shadow: none !important;
+                border: none !important;
+                outline: none !important;
+            }
+
+            .contact-info span:not(:last-child)::after {
+                content: " • " !important;
+                white-space: normal !important;
+                margin: 0 5px !important;
+            }
+
+            .company-details,
+            .education-details {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: space-between !important;
+                align-items: baseline !important;
+                flex-wrap: nowrap !important;
+                gap: 12px !important;
+            }
+
+            .company-details>span,
+            .education-details>span {
+                white-space: nowrap !important;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                break-after: avoid;
+                page-break-after: avoid;
+            }
+
+            h2,
+            .job-title,
+            .degree {
+                break-after: avoid;
+                page-break-after: avoid;
+            }
+
+            .experience-item,
+            .education-item {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            ul {
+                margin-top: 4px !important;
+                margin-bottom: 4px !important;
+            }
+
+            /* Page sizing */
             @page {
                 size: letter;
-                margin: 2cm;
+                margin: 1.9cm;
             }
+        }
+
+        body,
+        .summary,
+        .introduction,
+        li {
+            -webkit-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+            word-break: normal;
+            overflow-wrap: normal;
         }
     </style>
 </head>
 
 <body>
     <div class="action-buttons">
-        <!--button class="print-button" onclick="window.print()">Print</button-->
-        <a href="/assets/resume.pdf" class="download-button" download>Download</a>
+        <a class="download-button" href="assets/resume.pdf" download>Download</a>
     </div>
     <div class="page">
         <header>
@@ -338,50 +438,39 @@
                 <span>+1 (213) 245-1175</span>
                 <span>nilay.khandelwal@gmail.com</span>
                 <span>
-                    <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2c3e50">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    <svg class="linkedin-icon" fill="#2c3e50" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
                     </svg>
                     <a href="https://linkedin.com/in/nilayk" target="_blank">nilayk</a>
                 </span>
             </div>
         </header>
-
-        <section class="introduction">
-            I'm a software engineer with 14+ years of experience building scalable, high-performance systems in ad tech, full-stack development, and distributed computing. I enjoy solving complex engineering challenges and making systems run faster, smarter, and more efficiently.
-        </section>
-
+        <section class="introduction">Software engineer with 14+ years building high-scale, low-latency systems in ad tech and distributed platforms. Focused on system design, performance, reliability, integrations (SSP/DSP), and analytics/automation tooling. Lead production support and incident response.</section>
         <section class="section">
             <h2>Skills</h2>
-
             <div class="skills-group">
-                <span class="skill-label">Programming Languages:</span>
-                <span>C#, .NET Core, ASP.NET, JavaScript, Java, PHP, Python, VB.NET, SQL</span>
+                <span class="skill-label">Distributed Systems &amp; Architecture:</span>
+                <span>High-scale, low-latency serving systems; distributed platform design; event-driven architectures; in-memory serving caches/entity lookups; aggregation pipelines; edge/CDN delivery; SSP/DSP integrations</span>
             </div>
-
             <div class="skills-group">
-                <span class="skill-label">Databases & Streaming:</span>
-                <span>MongoDB, Redis, Microsoft SQL Server, Apache Druid, Amazon Kinesis</span>
+                <span class="skill-label">Data &amp; Real-Time Systems:</span>
+                <span>MongoDB, Redis, Microsoft SQL Server, Apache Druid, Amazon Kinesis, RabbitMQ</span>
             </div>
-
             <div class="skills-group">
-                <span class="skill-label">Cloud & Infrastructure:</span>
-                <span>Azure App Services, AWS (EC2, S3, Kinesis), Terraform, Cloudflare</span>
+                <span class="skill-label">Cloud &amp; Infrastructure:</span>
+                <span>Azure App Services, AWS (EC2, S3, Kinesis), Cloudflare, Docker, Terraform</span>
             </div>
-
             <div class="skills-group">
-                <span class="skill-label">Development Tools & Frameworks:</span>
-                <span>ASP.NET MVC, NHibernate, jQuery, Git, TeamCity</span>
+                <span class="skill-label">DevOps / CI/CD / Observability:</span>
+                <span>TeamCity, GitHub, New Relic, Kibana, Git</span>
             </div>
-
             <div class="skills-group">
-                <span class="skill-label">Specialties:</span>
-                <span>High-scale ad tech, distributed systems, real-time data processing, fraud detection, performance optimization, system design</span>
+                <span class="skill-label">Languages:</span>
+                <span>C#, SQL, JavaScript, Python, Java, PHP, VB.NET</span>
             </div>
         </section>
-
         <section class="section">
             <h2>Work Experience</h2>
-
             <div class="experience-item">
                 <div class="job-title">Senior Software Engineer</div>
                 <div class="company-details">
@@ -389,39 +478,36 @@
                     <span class="period">June 2011 - Present</span>
                 </div>
                 <div class="location">Culver City, CA</div>
-                <div class="summary">
-                    Senior engineer behind the core architecture of AdSupply's real-time ad-exchange platform, designed to handle over 1 billion daily ad requests. Spearheaded efforts to evolve the platform for distributed computing, system resilience, fraud mitigation, and performance-critical delivery pipelines across a hybrid cloud stack.
-                </div>
+                <div class="summary">Senior engineer on a real-time ad exchange and serving platform, focused on distributed systems, low-latency delivery, production reliability, and fraud mitigation. Contributed to .NET Framework to .NET Core modernization across a hybrid cloud environment (Azure and AWS).</div>
                 <ul>
-                    <li>Redesigned the ad-serving engine into a distributed, cloud-native architecture across Azure and AWS, cutting infrastructure costs by 50% and enabling scalable, cross-platform deployments.</li>
-                    <li>Achieved sub-100ms response times through low-latency integration with MongoDB, Redis, and Amazon Kinesis, boosting eCPM and improving delivery reliability.</li>
-                    <li>Developed and maintained high-revenue ad formats (popunders, floating pushes, programmatic), driving 60%+ of impressions and increasing direct campaign spend by 15%.</li>
-                    <li>Served on infrastructure incident response team with on-call duties, led issue triage, root-cause remediation, and deployment safeguards like staged rollouts and alerting.</li>
-                    <li>Co-developed a patented proxy system to bypass content blockers, increasing publisher network revenue by 20%.</li>
-                    <li>Built a real-time rules engine on Apache Druid with a custom internal DSL for bid filtering, campaign control, and advertiser automation.</li>
-                    <li>Designed CDN, asset servers, and edge-compute services, reducing hardware costs while minimizing response times.</li>
-                    <li>Led efforts to identify and mitigate ad fraud, ensuring cleaner traffic and achieving 90%+ viewability (Moat) and >99% human engagement.</li>
-                    <li>Developed ASP.NET MVC business tools and JavaScript analytics plugins, making data management and visualization easier for internal teams.</li>
+                    <li>Optimized the core ad exchange and serving platform and contributed to .NET Framework to .NET Core modernization.</li>
+                    <li>Supported low-latency ad delivery at scale (approx. 1B+ daily requests; sub-100ms responses), integrating with multiple SSPs and DSPs.</li>
+                    <li>Tuned critical data paths with MongoDB and Redis, improving maintainability and performance of hot codepaths.</li>
+                    <li>Implemented pub/sub messaging to propagate database updates to live serving nodes, enabling in-memory entity lookups and reducing database reads on the request path.</li>
+                    <li>Improved reliability with production safeguards, including Cloudflare-based controls to mitigate traffic anomalies and overload.</li>
+                    <li>Enhanced observability via New Relic instrumentation/configuration and operational diagnostics (including Kibana).</li>
+                    <li>Owned fraud mitigation initiatives within the delivery pipeline to improve traffic quality and revenue integrity.</li>
+                    <li>Originated the Web Push ad format concept; built the initial prototype and early integrations; led subsequent team expansion.</li>
+                    <li>Owned ad unit delivery scripts and ad tags across browsers and partner constraints; led content-blocker compatibility work to improve delivery under common blocking techniques.</li>
+                    <li>Built internal tooling and automation: ASP.NET Core apps, JavaScript analytics utilities, and Druid-based tracking and aggregation workflows.</li>
+                    <li>Led support engineering and production issue resolution; participated in incident response/on-call and drove code/design reviews with senior engineers.</li>
                 </ul>
+                <div class="summary">Selected initiatives: Adblock compatibility; compliance-driven flow and parameter changes; cross-browser tag debugging; overload and timeout mitigation; observability and runtime diagnostics improvements.</div>
             </div>
-
             <div class="experience-item">
-                <div class="job-title">Software Engineer</div>
+                <div class="job-title">Software Engineer (Concurrent)</div>
                 <div class="company-details">
                     <span class="company">EventSorbet</span>
                     <span class="period">December 2011 - April 2013</span>
                 </div>
                 <div class="location">Santa Monica, CA</div>
-                <div class="summary">
-                    An early-stage startup developing an event management platform, I worked as a Software Engineer, primarily focused on building and enhancing core platform features.
-                </div>
+                <div class="summary">An early-stage startup developing an event management platform, I worked as a Software Engineer, primarily focused on building and enhancing core platform features.</div>
                 <ul>
                     <li>Collaborated with the founding team on the initial setup of the platform stack using ASP.NET MVC, NHibernate ORM, JavaScript/jQuery for the UI, and Git for version control, ensuring efficient development and collaboration.</li>
                     <li>Developed and optimized the event search feature, which became the primary method of interacting with the platform.</li>
                     <li>Integrated Stripe payment service to enable credit card checkout, manage subscriptions, and streamline event vendor payouts, reducing manual processing for the internal team.</li>
                 </ul>
             </div>
-
             <div class="experience-item">
                 <div class="job-title">Student Programmer</div>
                 <div class="company-details">
@@ -429,15 +515,12 @@
                     <span class="period">October 2010 - May 2011</span>
                 </div>
                 <div class="location">Los Angeles, CA</div>
-                <div class="summary">
-                    Worked at the School of Pharmacy developing in-house custom web and database applications in VB.NET.
-                </div>
+                <div class="summary">Worked at the School of Pharmacy developing in-house custom web and database applications in VB.NET.</div>
                 <ul>
                     <li>Developed a time tracking system for employees, enhancing operational efficiency.</li>
                     <li>Maintained, tested, and documented code for internal employee support applications.</li>
                 </ul>
             </div>
-
             <div class="experience-item">
                 <div class="job-title">Associate Intern</div>
                 <div class="company-details">
@@ -445,32 +528,16 @@
                     <span class="period">May 2010 - August 2010</span>
                 </div>
                 <div class="location">Los Angeles, CA</div>
-                <div class="summary">
-                    Joined a Series A startup focused on building an online platform to help green startups connect with investors and raise capital.
-                </div>
+                <div class="summary">Joined a Series A startup focused on building an online platform to help green startups connect with investors and raise capital.</div>
                 <ul>
                     <li>Collaborated with offshore engineering team to test and resolve platform bugs.</li>
                     <li>Set up and managed a support ticketing system using osTicket on a managed LAMP stack server.</li>
                     <li>Configured and maintained a phpBB user forum on the LAMP stack to facilitate interaction between platform stakeholders.</li>
                 </ul>
             </div>
-
-            <div class="experience-item">
-                <div class="job-title">Internship Trainee</div>
-                <div class="company-details">
-                    <span class="company">Infosys Technologies Ltd.</span>
-                    <span class="period">January 2009 - May 2009</span>
-                </div>
-                <div class="location">Mysuru, India</div>
-                <div class="summary">
-                    Completed a 2-month training in Java technologies and contributed to a mobile app project, gaining hands-on experience in Java development, mobile app design, and database integration.
-                </div>
-            </div>
         </section>
-
         <section class="section">
             <h2>Education</h2>
-
             <div class="education-item">
                 <div class="degree">M.S. in Computer Science</div>
                 <div class="education-details">
@@ -479,7 +546,6 @@
                 </div>
                 <div class="location">Los Angeles, CA</div>
             </div>
-
             <div class="education-item">
                 <div class="degree">B.Tech. in Computer Science Engineering</div>
                 <div class="education-details">
