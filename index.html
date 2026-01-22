@@ -127,6 +127,12 @@
             margin-bottom: 5px;
         }
 
+        .location {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
         .summary {
             margin-bottom: 8px;
             text-align: left;
@@ -196,7 +202,6 @@
             line-height: 1.6;
         }
 
-        /* Mobile Responsiveness */
         @media (max-width: 768px) {
             body {
                 padding: 10px;
@@ -205,6 +210,7 @@
 
             .page {
                 padding: 0.3in;
+                min-height: auto;
                 box-shadow: none;
                 border: 1px solid #ddd;
             }
@@ -225,6 +231,10 @@
             .contact-info {
                 font-size: 12px;
                 line-height: 1.6;
+            }
+
+            .location {
+                font-size: 12px;
             }
 
             .contact-info span:not(:last-child)::after {
@@ -280,6 +290,10 @@
                 font-size: 11px;
             }
 
+            .location {
+                font-size: 11px;
+            }
+
             .introduction {
                 font-size: 12px;
             }
@@ -304,45 +318,30 @@
             }
         }
 
+        @media (max-width: 768px) and (orientation: landscape) {
+            .page {
+                min-height: auto;
+            }
+
+            .contact-info span:not(:last-child)::after {
+                content: " • ";
+                white-space: normal;
+                margin: 0 5px;
+            }
+
+            .company-details,
+            .education-details {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: baseline;
+                gap: 12px;
+            }
+        }
+
         @media print {
-
-            html,
             body {
-                padding: 0 !important;
-                margin: 0 !important;
-                background: #ffffff !important;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-
-
-                .experience-item,
-                .education-item {
-                    break-inside: auto !important;
-                    page-break-inside: auto !important;
-                }
-
-                .experience-item .job-title,
-                .experience-item .company-details,
-                .experience-item .location,
-                .experience-item .summary,
-                .education-item .degree,
-                .education-item .education-details,
-                .education-item .location {
-                    break-after: avoid !important;
-                    page-break-after: avoid !important;
-                }
-
-                .experience-item ul,
-                .education-item ul {
-                    break-inside: auto !important;
-                    page-break-inside: auto !important;
-                }
-
-                p,
-                li {
-                    orphans: 2;
-                    widows: 2;
-                }
+                padding: 0;
+                background-color: white;
             }
 
             .action-buttons {
@@ -350,15 +349,16 @@
             }
 
             .page {
-                width: 100% !important;
-                max-width: none !important;
-                min-height: auto !important;
-                margin: 0 !important;
-                padding: 0 !important;
-                background: #ffffff !important;
-                box-shadow: none !important;
-                border: none !important;
-                outline: none !important;
+                width: 100%;
+                box-shadow: none;
+                border: none;
+                outline: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            h1 {
+                text-transform: uppercase;
             }
 
             .contact-info span:not(:last-child)::after {
@@ -382,12 +382,7 @@
                 white-space: nowrap !important;
             }
 
-            h1 {
-                text-transform: uppercase;
-                break-after: avoid;
-                page-break-after: avoid;
-            }
-
+            h1,
             h2,
             .job-title,
             .degree {
@@ -395,7 +390,11 @@
                 page-break-after: avoid;
             }
 
-            .experience-item,
+            .experience-item {
+                break-inside: auto;
+                page-break-inside: auto;
+            }
+
             .education-item {
                 break-inside: avoid;
                 page-break-inside: avoid;
@@ -406,7 +405,11 @@
                 margin-bottom: 4px !important;
             }
 
-            /* Page sizing */
+            li {
+                orphans: 2;
+                widows: 2;
+            }
+
             @page {
                 size: letter;
                 margin: 1.9cm;
