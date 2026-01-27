@@ -5,10 +5,10 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" type="image/png" />
+    <link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="site.webmanifest" rel="manifest" />
     <title>Nilay Khandelwal - Resume</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display:wght@400;700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
@@ -200,7 +200,7 @@
             margin-bottom: 12px;
             padding-bottom: 12px;
             text-align: left;
-            font-size: 13px;
+            font-size: 12px;
             line-height: 1.6;
         }
 
@@ -466,12 +466,189 @@
             word-break: normal;
             overflow-wrap: normal;
         }
+
+        .subrole {
+            margin-top: 10px;
+        }
+
+        .subrole-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .subrole-title {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 13.5px;
+        }
+
+        .subrole-period {
+            font-style: italic;
+            color: #555;
+            font-size: 12.5px;
+            white-space: nowrap;
+        }
+
+        .subrole-bullets {
+            margin-top: 4px;
+        }
+
+        @media print {
+            .subrole-header {
+                flex-wrap: nowrap !important;
+            }
+
+            .subrole-title,
+            .subrole-period {
+                white-space: nowrap !important;
+            }
+
+            .subrole {
+                margin-top: 8px !important;
+            }
+
+            .subrole-bullets li {
+                margin-bottom: 3px !important;
+            }
+        }
+
+        .subrole {
+            margin-left: 12px;
+            padding-left: 10px;
+        }
+
+        .subrole-title {
+            font-size: 13px;
+        }
+
+        .subrole-bullets {
+            padding-left: 18px;
+        }
+
+        @media print {
+            .subrole {
+                margin-left: 10px !important;
+                padding-left: 8px !important;
+            }
+
+            .subrole-bullets {
+                padding-left: 16px !important;
+            }
+        }
+
+        @media print {
+            body {
+                font-size: 12px !important;
+                line-height: 1.42 !important;
+            }
+
+            header {
+                margin-bottom: 14px !important;
+                padding-bottom: 10px !important;
+            }
+
+            .introduction {
+                margin-bottom: 10px !important;
+                padding-bottom: 10px !important;
+            }
+
+            .section {
+                margin-bottom: 12px !important;
+            }
+
+            h2 {
+                margin-bottom: 9px !important;
+                padding-bottom: 4px !important;
+            }
+
+            .experience-item,
+            .education-item {
+                margin-bottom: 10px !important;
+            }
+
+            .summary {
+                margin-bottom: 6px !important;
+            }
+
+            ul {
+                margin-bottom: 3px !important;
+            }
+
+            li {
+                margin-bottom: 2.5px !important;
+            }
+
+            .subrole {
+                margin-top: 6px !important;
+            }
+
+            .subrole-bullets li {
+                margin-bottom: 2.5px !important;
+            }
+
+            @page {
+                margin: 1.5cm !important;
+            }
+        }
+
+        .resume-link {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .resume-link a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .resume-link a:hover {
+            text-decoration: underline;
+        }
+
+        .resume-qr {
+            width: 62px;
+            height: 62px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 480px) {
+            .resume-link {
+                font-size: 11px;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+
+            .resume-qr {
+                width: 56px;
+                height: 56px;
+            }
+        }
+
+        @media print {
+            .resume-link {
+                margin-top: 6px !important;
+                font-size: 10.5px !important;
+                gap: 8px !important;
+            }
+
+            .resume-qr {
+                width: 50px !important;
+                height: 50px !important;
+            }
+        }   
     </style>
 </head>
 
 <body>
     <div class="action-buttons">
-        <a class="download-button" href="assets/Nilay Khandelwal - Resume.pdf" download>Download</a>
+        <a class="download-button" href="assets/Nilay%20Khandelwal%20-%20Resume.pdf" download>Download</a>
     </div>
     <div class="page">
         <header>
@@ -486,14 +663,20 @@
                     </svg>
                     <a href="https://linkedin.com/in/nilayk" target="_blank">nilayk</a>
                 </span>
+                <span>
+                    <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2c3e50" aria-hidden="true">
+                        <path d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2Zm7.93 9h-3.05a15.65 15.65 0 0 0-1.1-5.02A8.03 8.03 0 0 1 19.93 11ZM12 4.07c.97 1.3 1.74 3.72 1.98 6.93H10.02C10.26 7.79 11.03 5.37 12 4.07ZM4.07 13h3.05a15.65 15.65 0 0 0 1.1 5.02A8.03 8.03 0 0 1 4.07 13Zm3.05-2H4.07a8.03 8.03 0 0 1 4.15-5.02A15.65 15.65 0 0 0 7.12 11ZM12 19.93c-.97-1.3-1.74-3.72-1.98-6.93h3.96c-.24 3.21-1.01 5.63-1.98 6.93ZM14.88 13h3.05a15.65 15.65 0 0 1-1.1 5.02A8.03 8.03 0 0 1 14.88 13Zm-4.86 0c.25 3.06.99 5.34 1.98 6.57.99-1.23 1.73-3.51 1.98-6.57h-3.96Zm0-2h3.96c-.25-3.06-.99-5.34-1.98-6.57-.99 1.23-1.73 3.51-1.98 6.57Zm8.2 0h-3.34c-.09-1.72-.34-3.32-.76-4.62A8.03 8.03 0 0 1 18.22 11Zm-8.2 0H5.78a8.03 8.03 0 0 1 4.1-4.62c-.42 1.3-.67 2.9-.76 4.62Z" />
+                    </svg>
+                    <a href="https://nilayk.com" target="_blank" rel="noopener">nilayk.com</a>
+                </span>
             </div>
         </header>
-        <section class="introduction">Software engineer with 14+ years building high-scale, low-latency systems in ad tech and distributed platforms. Focused on system design, performance, reliability, integrations (SSP/DSP), and analytics/automation tooling. Lead production support and incident response.</section>
+        <section class="introduction">Software engineer with 14+ years building and operating high-scale, low-latency ad tech and distributed platforms (approx. 1B+ daily requests, approx. sub-100ms responses). Focused on system design, production reliability and incident response, integrations (SSP and DSP), and automation tooling.</section>
         <section class="section">
             <h2>Skills</h2>
             <div class="skills-group">
                 <span class="skill-label">Distributed Systems &amp; Architecture:</span>
-                <span>High-scale, low-latency serving systems; distributed platform design; event-driven architectures; in-memory serving caches/entity lookups; aggregation pipelines; edge/CDN delivery; SSP/DSP integrations</span>
+                <span>High-scale, low-latency serving systems; microservices; distributed platform design; event-driven architectures; in-memory serving caches/entity lookups; aggregation pipelines; edge/CDN management; SSP/DSP integrations</span>
             </div>
             <div class="skills-group">
                 <span class="skill-label">Data &amp; Real-Time Systems:</span>
@@ -509,7 +692,7 @@
             </div>
             <div class="skills-group">
                 <span class="skill-label">Languages:</span>
-                <span>C#, SQL, JavaScript, Python, Java, PHP, VB.NET</span>
+                <span>C#, ASP.NET Core MVC, SQL, JavaScript, Knockout, jQuery, Python, Java, PHP, VB.NET</span>
             </div>
         </section>
         <section class="section">
@@ -521,21 +704,34 @@
                     <span class="period">June 2011 - Present</span>
                 </div>
                 <div class="location">Culver City, CA</div>
-                <div class="summary">Senior engineer on a real-time ad exchange and serving platform, focused on distributed systems, low-latency delivery, production reliability, and fraud mitigation. Contributed to .NET Framework to .NET Core modernization across a hybrid cloud environment (Azure and AWS).</div>
-                <ul>
-                    <li>Optimized the core ad exchange and serving platform and contributed to .NET Framework to .NET Core modernization.</li>
-                    <li>Supported low-latency ad delivery at scale (approx. 1B+ daily requests; sub-100ms responses), integrating with multiple SSPs and DSPs.</li>
-                    <li>Tuned critical data paths with MongoDB and Redis, improving maintainability and performance of hot codepaths.</li>
-                    <li>Implemented pub/sub messaging to propagate database updates to live serving nodes, enabling in-memory entity lookups and reducing database reads on the request path.</li>
-                    <li>Improved reliability with production safeguards, including Cloudflare-based controls to mitigate traffic anomalies and overload.</li>
-                    <li>Enhanced observability via New Relic instrumentation/configuration and operational diagnostics (including Kibana).</li>
-                    <li>Owned fraud mitigation initiatives within the delivery pipeline to improve traffic quality and revenue integrity.</li>
-                    <li>Originated the Web Push ad format concept; built the initial prototype and early integrations; led subsequent team expansion.</li>
-                    <li>Owned ad unit delivery scripts and ad tags across browsers and partner constraints; led content-blocker compatibility work to improve delivery under common blocking techniques.</li>
-                    <li>Built internal tooling and automation: ASP.NET Core apps, JavaScript analytics utilities, and Druid-based tracking and aggregation workflows.</li>
-                    <li>Led support engineering and production issue resolution; participated in incident response/on-call and drove code/design reviews with senior engineers.</li>
-                </ul>
-                <div class="summary">Selected initiatives: Adblock compatibility; compliance-driven flow and parameter changes; cross-browser tag debugging; overload and timeout mitigation; observability and runtime diagnostics improvements.</div>
+                <div class="summary">Senior engineer on a real-time ad exchange and serving platform focused on distributed delivery, low-latency performance, fraud mitigation, and production reliability, including monolith-to-microservices modernization.</div>
+                <div class="subrole">
+                    <div class="subrole-header"><span class="subrole-title">Senior Software Engineer and Lead Support Engineer</span><span class="subrole-period">2020 - Present</span></div>
+                    <ul class="subrole-bullets">
+                        <li>Contributed to .NET Framework to .NET Core efforts, completed on-prem to cloud-native migration, and decomposed monolith components into microservices.</li>
+                        <li>Originated the Web Push ad format, built the initial prototype and early integrations, and led expansion of the format.</li>
+                        <li>Led production support and incident response, implemented Cloudflare edge controls, and enhanced diagnostics with New Relic and Kibana.</li>
+                        <li>Owned fraud mitigation initiatives within the delivery pipeline to improve traffic quality and revenue integrity.</li>
+                        <li>Implemented a rules engine microservice for real-time tracking (Apache Druid) and automated campaign management, reducing manual interventions for account managers and clients.</li>
+                    </ul>
+                </div>
+                <div class="subrole">
+                    <div class="subrole-header"><span class="subrole-title">Software Engineer II / Lead Support Engineer</span><span class="subrole-period">2014 - 2020</span></div>
+                    <ul class="subrole-bullets">
+                        <li>Led ad delivery compatibility work under common AdBlock and content-blocker techniques, owned ad unit scripts and tags across browser and partner constraints.</li>
+                        <li>Tuned request-path data flows with MongoDB and Redis, improving hot codepaths for performance and maintainability.</li>
+                        <li>Implemented pub/sub messaging to propagate database updates to live serving nodes, enabling in-memory entity lookups and reducing database reads on the request path.</li>
+                        <li>Served as escalation point for complex production issues, bridging client-side tag behavior and backend delivery logic, and drove code and design reviews.</li>
+                    </ul>
+                </div>
+                <div class="subrole">
+                    <div class="subrole-header"><span class="subrole-title">Software Engineer</span><span class="subrole-period">2011 - 2014</span></div>
+                    <ul class="subrole-bullets">
+                        <li>Helped start the platform on a new stack, delivered customer-facing interfaces, and built reporting and analytics workflows.</li>
+                        <li>Built SQL-based reporting and analytics workflows to support business and operational needs.</li>
+                        <li>Expanded and maintained ad unit delivery scripts and tags as platform scope and partner integrations grew.</li>
+                    </ul>
+                </div>
             </div>
             <div class="experience-item">
                 <div class="job-title">Software Engineer (Concurrent)</div>
