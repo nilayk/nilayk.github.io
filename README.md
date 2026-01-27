@@ -1,20 +1,20 @@
 # Nilay Khandelwal
 
 **Software Engineer** | Los Angeles, CA  
-💼 [LinkedIn](https://linkedin.com/in/nilayk)
+💼 [LinkedIn](https://linkedin.com/in/nilayk) • 🌐 [nilayk.com](https://nilayk.com)
 
 ---
 
 ## About Me
 
-Software engineer with 14+ years building high-scale, low-latency systems in ad tech and distributed platforms. Focused on system design, performance, reliability, integrations (SSP/DSP), and analytics/automation tooling. Lead production support and incident response.
+Software engineer with 14+ years building and operating high-scale, low-latency ad tech and distributed platforms (approx. 1B+ daily requests, approx. sub-100ms responses). Focused on system design, production reliability and incident response, integrations (SSP and DSP), and automation tooling.
 
 ---
 
 ## 🛠️ Technical Skills
 
 ### Distributed Systems & Architecture
-High-scale, low-latency serving systems; distributed platform design; event-driven architectures; in-memory serving caches/entity lookups; aggregation pipelines; edge/CDN delivery; SSP/DSP integrations
+High-scale, low-latency serving systems; microservices; distributed platform design; event-driven architectures; in-memory serving caches/entity lookups; aggregation pipelines; edge/CDN management; SSP/DSP integrations
 
 ### Data & Real-Time Systems
 MongoDB, Redis, Microsoft SQL Server, Apache Druid, Amazon Kinesis, RabbitMQ
@@ -26,7 +26,7 @@ Azure App Services, AWS (EC2, S3, Kinesis), Cloudflare, Docker, Terraform
 TeamCity, GitHub, New Relic, Kibana, Git
 
 ### Languages
-C#, SQL, JavaScript, Python, Java, PHP, VB.NET
+C#, ASP.NET Core MVC, SQL, JavaScript, Knockout, jQuery, Python, Java, PHP, VB.NET
 
 ---
 
@@ -35,22 +35,25 @@ C#, SQL, JavaScript, Python, Java, PHP, VB.NET
 ### Senior Software Engineer
 **AdSupply Inc** | *June 2011 - Present* | Culver City, CA
 
-Senior engineer on a real-time ad exchange and serving platform, focused on distributed systems, low-latency delivery, production reliability, and fraud mitigation. Contributed to .NET Framework to .NET Core modernization across a hybrid cloud environment (Azure and AWS).
+Senior engineer on a real-time ad exchange and serving platform focused on distributed delivery, low-latency performance, fraud mitigation, and production reliability, including monolith-to-microservices modernization.
 
-**Key Achievements:**
-- Optimized the core ad exchange and serving platform and contributed to .NET Framework to .NET Core modernization
-- Supported low-latency ad delivery at scale (approx. 1B+ daily requests; sub-100ms responses), integrating with multiple SSPs and DSPs
-- Tuned critical data paths with MongoDB and Redis, improving maintainability and performance of hot codepaths
-- Implemented pub/sub messaging to propagate database updates to live serving nodes, enabling in-memory entity lookups and reducing database reads on the request path
-- Improved reliability with production safeguards, including Cloudflare-based controls to mitigate traffic anomalies and overload
-- Enhanced observability via New Relic instrumentation/configuration and operational diagnostics (including Kibana)
-- Owned fraud mitigation initiatives within the delivery pipeline to improve traffic quality and revenue integrity
-- Originated the Web Push ad format concept; built the initial prototype and early integrations; led subsequent team expansion
-- Owned ad unit delivery scripts and ad tags across browsers and partner constraints; led content-blocker compatibility work to improve delivery under common blocking techniques
-- Built internal tooling and automation: ASP.NET Core apps, JavaScript analytics utilities, and Druid-based tracking and aggregation workflows
-- Led support engineering and production issue resolution; participated in incident response/on-call and drove code/design reviews with senior engineers
+#### Senior Software Engineer and Lead Support Engineer — *2020 - Present*
+- Contributed to .NET Framework to .NET Core efforts, completed on-prem to cloud-native migration, and decomposed monolith components into microservices.
+- Originated the Web Push ad format, built the initial prototype and early integrations, and led expansion of the format.
+- Led production support and incident response, implemented Cloudflare edge controls, and enhanced diagnostics with New Relic and Kibana.
+- Owned fraud mitigation initiatives within the delivery pipeline to improve traffic quality and revenue integrity.
+- Implemented a rules engine microservice for real-time tracking (Apache Druid) and automated campaign management, reducing manual interventions for account managers and clients.
 
-*Selected initiatives: Adblock compatibility; compliance-driven flow and parameter changes; cross-browser tag debugging; overload and timeout mitigation; observability and runtime diagnostics improvements.*
+#### Software Engineer II / Lead Support Engineer — *2014 - 2020*
+- Led ad delivery compatibility work under common AdBlock and content-blocker techniques, owned ad unit scripts and tags across browser and partner constraints.
+- Tuned request-path data flows with MongoDB and Redis, improving hot codepaths for performance and maintainability.
+- Implemented pub/sub messaging to propagate database updates to live serving nodes, enabling in-memory entity lookups and reducing database reads on the request path.
+- Served as escalation point for complex production issues, bridging client-side tag behavior and backend delivery logic, and drove code and design reviews.
+
+#### Software Engineer — *2011 - 2014*
+- Helped start the platform on a new stack, delivered customer-facing interfaces, and built reporting and analytics workflows.
+- Built SQL-based reporting and analytics workflows to support business and operational needs.
+- Expanded and maintained ad unit delivery scripts and tags as platform scope and partner integrations grew.
 
 ---
 
@@ -95,7 +98,7 @@ Joined a Series A startup focused on building an online platform to help green s
 **University of Southern California** | *2009 - 2011* | Los Angeles, CA
 
 ### B.Tech. in Computer Science Engineering
-**Jaypee Institute of Information Technology** | *2005 - 2009* | NOIDA, India 
+**Jaypee Institute of Information Technology** | *2005 - 2009* | NOIDA, India
 
 ---
 
@@ -104,6 +107,7 @@ Joined a Series A startup focused on building an online platform to help green s
 I'm always interested in discussing new opportunities, technical challenges, and innovative projects. Feel free to reach out!
 
 - 💼 [LinkedIn](https://linkedin.com/in/nilayk)
+- 🌐 [nilayk.com](https://nilayk.com)
 
 ---
 
