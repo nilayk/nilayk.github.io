@@ -37,14 +37,14 @@ C#, ASP.NET Core MVC, SQL, JavaScript, Knockout, jQuery, Python, Java, PHP, VB.N
 
 Senior engineer on a real-time ad exchange and serving platform focused on distributed delivery, low-latency performance, fraud mitigation, and production reliability, including monolith-to-microservices modernization.
 
-#### Senior Software Engineer and Lead Support Engineer — *2020 - Present*
+#### Senior Software Engineer / Lead Support Engineer — *2020 - Present*
 - Contributed to .NET Framework to .NET Core efforts, completed on-prem to cloud-native migration, and decomposed monolith components into microservices.
 - Originated the Web Push ad format, built the initial prototype and early integrations, and led expansion of the format.
 - Led production support and incident response, implemented Cloudflare edge controls, and enhanced diagnostics with New Relic and Kibana.
 - Owned fraud mitigation initiatives within the delivery pipeline to improve traffic quality and revenue integrity.
 - Implemented a rules engine microservice for real-time tracking (Apache Druid) and automated campaign management, reducing manual interventions for account managers and clients.
 
-#### Software Engineer II / Lead Support Engineer — *2014 - 2020*
+#### Software Engineer II / Support Engineer — *2014 - 2020*
 - Led ad delivery compatibility work under common AdBlock and content-blocker techniques, owned ad unit scripts and tags across browser and partner constraints.
 - Tuned request-path data flows with MongoDB and Redis, improving hot codepaths for performance and maintainability.
 - Implemented pub/sub messaging to propagate database updates to live serving nodes, enabling in-memory entity lookups and reducing database reads on the request path.
@@ -107,7 +107,6 @@ Joined a Series A startup focused on building an online platform to help green s
 I'm always interested in discussing new opportunities, technical challenges, and innovative projects. Feel free to reach out!
 
 - 💼 [LinkedIn](https://linkedin.com/in/nilayk)
-- 🌐 [nilayk.com](https://nilayk.com)
 
 ---
 
