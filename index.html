@@ -62,7 +62,7 @@
             color: #555;
         }
 
-        .contact-info span:not(:last-child)::after {
+        .contact-info span:not(:first-child)::before {
             content: " • ";
             margin: 0 5px;
         }
@@ -76,7 +76,7 @@
             text-decoration: underline;
         }
 
-        .linkedin-icon {
+        .linkedin-icon, .globe-icon {
             height: 12px;
             width: 12px;
             margin-right: 4px;
@@ -239,7 +239,7 @@
                 font-size: 12px;
             }
 
-            .contact-info span:not(:last-child)::after {
+            .contact-info span:not(:first-child)::before {
                 content: "\A";
                 white-space: pre;
                 margin: 0;
@@ -362,7 +362,7 @@
                 font-size: 13px !important;
             }
 
-            .contact-info span:not(:last-child)::after {
+            .contact-info span:not(:first-child)::before {
                 content: " • ";
                 white-space: normal;
                 margin: 0 5px;
@@ -401,7 +401,7 @@
                 text-transform: uppercase;
             }
 
-            .contact-info span:not(:last-child)::after {
+            .contact-info span:not(:first-child)::before {
                 content: " • " !important;
                 white-space: normal !important;
                 margin: 0 5px !important;
@@ -540,7 +540,7 @@
         @media print {
             body {
                 font-size: 12px !important;
-                line-height: 1.42 !important;
+                line-height: 1.45 !important;
             }
 
             header {
@@ -589,6 +589,16 @@
 
             @page {
                 margin: 1.5cm !important;
+            }
+        }
+
+        .print-only {
+            display: none;
+        }
+
+        @media print {
+            .print-only {
+                display: inline !important;
             }
         }
 
@@ -655,23 +665,23 @@
             <h1>Nilay Khandelwal</h1>
             <div class="contact-info">
                 <span>Los Angeles, CA</span>
-                <span>+1 (213) 245-1175</span>
-                <span>nilay.khandelwal@gmail.com</span>
+                <span><a href="tel:+12132451175">+1 (213) 245-1175</a></span>
+                <span><a href="mailto:nilay.khandelwal@gmail.com">nilay.khandelwal@gmail.com</a></span>
                 <span>
-                    <svg class="linkedin-icon" fill="#2c3e50" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="linkedin-icon" fill="#2c3e50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
                     </svg>
                     <a href="https://linkedin.com/in/nilayk" target="_blank">nilayk</a>
                 </span>
-                <span>
-                    <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2c3e50" aria-hidden="true">
+                <span class="print-only">
+                    <svg class="globe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2c3e50" aria-hidden="true">
                         <path d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2Zm7.93 9h-3.05a15.65 15.65 0 0 0-1.1-5.02A8.03 8.03 0 0 1 19.93 11ZM12 4.07c.97 1.3 1.74 3.72 1.98 6.93H10.02C10.26 7.79 11.03 5.37 12 4.07ZM4.07 13h3.05a15.65 15.65 0 0 0 1.1 5.02A8.03 8.03 0 0 1 4.07 13Zm3.05-2H4.07a8.03 8.03 0 0 1 4.15-5.02A15.65 15.65 0 0 0 7.12 11ZM12 19.93c-.97-1.3-1.74-3.72-1.98-6.93h3.96c-.24 3.21-1.01 5.63-1.98 6.93ZM14.88 13h3.05a15.65 15.65 0 0 1-1.1 5.02A8.03 8.03 0 0 1 14.88 13Zm-4.86 0c.25 3.06.99 5.34 1.98 6.57.99-1.23 1.73-3.51 1.98-6.57h-3.96Zm0-2h3.96c-.25-3.06-.99-5.34-1.98-6.57-.99 1.23-1.73 3.51-1.98 6.57Zm8.2 0h-3.34c-.09-1.72-.34-3.32-.76-4.62A8.03 8.03 0 0 1 18.22 11Zm-8.2 0H5.78a8.03 8.03 0 0 1 4.1-4.62c-.42 1.3-.67 2.9-.76 4.62Z" />
                     </svg>
                     <a href="https://nilayk.com" target="_blank" rel="noopener">nilayk.com</a>
                 </span>
             </div>
         </header>
-        <section class="introduction">Software engineer with 14+ years building and operating high-scale, low-latency ad tech and distributed platforms (approx. 1B+ daily requests, approx. sub-100ms responses). Focused on system design, production reliability and incident response, integrations (SSP and DSP), and automation tooling.</section>
+        <section class="introduction">Senior software engineer with 14+ years building and operating high-scale, low-latency ad tech and distributed platforms (1B+ daily requests, sub-100ms responses). Experienced in system architecture, large-scale production operations, platform modernization, integrations (SSP and DSP), and cross-functional collaboration with product and revenue teams to deliver high-impact advertising infrastructure.</section>
         <section class="section">
             <h2>Skills</h2>
             <div class="skills-group">
@@ -704,32 +714,32 @@
                     <span class="period">June 2011 - Present</span>
                 </div>
                 <div class="location">Culver City, CA</div>
-                <div class="summary">Senior engineer on a real-time ad exchange and serving platform focused on distributed delivery, low-latency performance, fraud mitigation, and production reliability, including monolith-to-microservices modernization.</div>
+                <div class="summary">Senior engineer on a real-time ad exchange and serving platform responsible for architecture evolution, system reliability, and distributed delivery infrastructure supporting billions of daily advertising requests. Key contributor to platform modernization, revenue-generating product features, and production incident response.</div>
                 <div class="subrole">
-                    <div class="subrole-header"><span class="subrole-title">Senior Software Engineer / Lead Support Engineer</span><span class="subrole-period">2020 - Present</span></div>
+                    <div class="subrole-header"><span class="subrole-title">Senior Software Engineer &amp; Lead Support Engineer</span><span class="subrole-period">2020 - Present</span></div>
                     <ul class="subrole-bullets">
-                        <li>Contributed to .NET Framework to .NET Core efforts, completed on-prem to cloud-native migration, and decomposed monolith components into microservices.</li>
-                        <li>Originated the Web Push ad format, built the initial prototype and early integrations, and led expansion of the format.</li>
-                        <li>Led production support and incident response, implemented Cloudflare edge controls, and enhanced diagnostics with New Relic and Kibana.</li>
-                        <li>Owned fraud mitigation initiatives within the delivery pipeline to improve traffic quality and revenue integrity.</li>
-                        <li>Implemented a rules engine microservice for real-time tracking (Apache Druid) and automated campaign management, reducing manual interventions for account managers and clients.</li>
+                        <li>Led migration of key platform components from .NET Framework to .NET Core, modernizing the platform architecture, decomposing monolith components into microservices, and supporting transition from on-prem infrastructure to cloud-native deployments.</li>
+                        <li>Originated and prototyped the Web Push advertising format, collaborating with business stakeholders and engineering teams to launch and expand a new revenue-generating ad product.</li>
+                        <li>Led production reliability initiatives including incident response, observability improvements, and edge traffic management using Cloudflare, New Relic, and Kibana.</li>
+                        <li>Owned fraud mitigation systems within the ad delivery pipeline, improving traffic quality and protecting platform revenue integrity.</li>
+                        <li>Designed and implemented a rules-based microservice platform using Apache Druid for real-time campaign tracking and automation, reducing manual operations for internal teams and clients.</li>
                     </ul>
                 </div>
                 <div class="subrole">
-                    <div class="subrole-header"><span class="subrole-title">Software Engineer II / Support Engineer</span><span class="subrole-period">2014 - 2020</span></div>
+                    <div class="subrole-header"><span class="subrole-title">Software Engineer II &amp; Support Engineer</span><span class="subrole-period">2014 - 2020</span></div>
                     <ul class="subrole-bullets">
-                        <li>Led ad delivery compatibility work under common AdBlock and content-blocker techniques, owned ad unit scripts and tags across browser and partner constraints.</li>
-                        <li>Tuned request-path data flows with MongoDB and Redis, improving hot codepaths for performance and maintainability.</li>
+                        <li>Led platform compatibility work across AdBlock and browser content-blocking mechanisms; owned ad unit scripts and tags across browser and partner constraints.</li>
+                        <li>Optimized request-path data flows with MongoDB and Redis, improving performance and maintainability.</li>
                         <li>Implemented pub/sub messaging to propagate database updates to live serving nodes, enabling in-memory entity lookups and reducing database reads on the request path.</li>
-                        <li>Served as escalation point for complex production issues, bridging client-side tag behavior and backend delivery logic, and drove code and design reviews.</li>
+                        <li>Served as an escalation point for complex production issues, bridging client-side ad delivery behavior with backend platform logic while contributing to architecture discussions and code reviews.</li>
                     </ul>
                 </div>
                 <div class="subrole">
                     <div class="subrole-header"><span class="subrole-title">Software Engineer</span><span class="subrole-period">2011 - 2014</span></div>
                     <ul class="subrole-bullets">
-                        <li>Helped start the platform on a new stack, delivered customer-facing interfaces, and built reporting and analytics workflows.</li>
-                        <li>Built SQL-based reporting and analytics workflows to support business and operational needs.</li>
-                        <li>Expanded and maintained ad unit delivery scripts and tags as platform scope and partner integrations grew.</li>
+                        <li>Helped build early versions of the ad serving platform, delivering customer-facing interfaces and foundational reporting and analytics capabilities.</li>
+                        <li>Built SQL-based reporting systems used internally for operational analytics and business insights.</li>
+                        <li>Expanded and maintained ad unit delivery scripts and partner integrations as platform scale and demand grew.</li>
                     </ul>
                 </div>
             </div>
@@ -740,11 +750,11 @@
                     <span class="period">December 2011 - April 2013</span>
                 </div>
                 <div class="location">Santa Monica, CA</div>
-                <div class="summary">An early-stage startup developing an event management platform, I worked as a Software Engineer, primarily focused on building and enhancing core platform features.</div>
+                <div class="summary">Early-stage startup developing an event management platform. Worked on core platform capabilities and payment infrastructure.</div>
                 <ul>
-                    <li>Collaborated with the founding team on the initial setup of the platform stack using ASP.NET MVC, NHibernate ORM, JavaScript/jQuery for the UI, and Git for version control, ensuring efficient development and collaboration.</li>
-                    <li>Developed and optimized the event search feature, which became the primary method of interacting with the platform.</li>
-                    <li>Integrated Stripe payment service to enable credit card checkout, manage subscriptions, and streamline event vendor payouts, reducing manual processing for the internal team.</li>
+                    <li>Collaborated with founding engineers to establish the initial platform stack using ASP.NET MVC, NHibernate ORM, and JavaScript/jQuery.</li>
+                    <li>Designed and optimized the event search functionality that became the primary user interaction workflow.</li>
+                    <li>Integrated Stripe payment processing for subscriptions and vendor payouts, automating payment workflows and reducing manual operational work.</li>
                 </ul>
             </div>
             <div class="experience-item">
@@ -754,10 +764,10 @@
                     <span class="period">October 2010 - May 2011</span>
                 </div>
                 <div class="location">Los Angeles, CA</div>
-                <div class="summary">Worked at the School of Pharmacy developing in-house custom web and database applications in VB.NET.</div>
+                <div class="summary">Worked at the School of Pharmacy developing custom web and database applications in VB.NET.</div>
                 <ul>
-                    <li>Developed a time tracking system for employees, enhancing operational efficiency.</li>
-                    <li>Maintained, tested, and documented code for internal employee support applications.</li>
+                    <li>Built internal employee time-tracking software to improve operational efficiency.</li>
+                    <li>Maintained and enhanced internal web applications used by university staff.</li>
                 </ul>
             </div>
             <div class="experience-item">
@@ -767,11 +777,11 @@
                     <span class="period">May 2010 - August 2010</span>
                 </div>
                 <div class="location">Los Angeles, CA</div>
-                <div class="summary">Joined a Series A startup focused on building an online platform to help green startups connect with investors and raise capital.</div>
+                <div class="summary">Series A startup building an online platform connecting green startups with investors and facilitating capital raises.</div>
                 <ul>
-                    <li>Collaborated with offshore engineering team to test and resolve platform bugs.</li>
-                    <li>Set up and managed a support ticketing system using osTicket on a managed LAMP stack server.</li>
-                    <li>Configured and maintained a phpBB user forum on the LAMP stack to facilitate interaction between platform stakeholders.</li>
+                    <li>Collaborated with an offshore engineering team to test and resolve platform issues.</li>
+                    <li>Deployed and managed osTicket support infrastructure on a LAMP stack.</li>
+                    <li>Configured and maintained phpBB community forums for platform users and stakeholders.</li>
                 </ul>
             </div>
         </section>

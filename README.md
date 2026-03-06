@@ -7,7 +7,7 @@
 
 ## About Me
 
-Software engineer with 14+ years building and operating high-scale, low-latency ad tech and distributed platforms (approx. 1B+ daily requests, approx. sub-100ms responses). Focused on system design, production reliability and incident response, integrations (SSP and DSP), and automation tooling.
+Senior software engineer with 14+ years building and operating high-scale, low-latency ad tech and distributed platforms (1B+ daily requests, sub-100ms responses). Experienced in system architecture, large-scale production operations, platform modernization, integrations (SSP and DSP), and cross-functional collaboration with product and revenue teams to deliver high-impact advertising infrastructure.
 
 ---
 
@@ -35,60 +35,60 @@ C#, ASP.NET Core MVC, SQL, JavaScript, Knockout, jQuery, Python, Java, PHP, VB.N
 ### Senior Software Engineer
 **AdSupply Inc** | *June 2011 - Present* | Culver City, CA
 
-Senior engineer on a real-time ad exchange and serving platform focused on distributed delivery, low-latency performance, fraud mitigation, and production reliability, including monolith-to-microservices modernization.
+Senior engineer on a real-time ad exchange and serving platform responsible for architecture evolution, system reliability, and distributed delivery infrastructure supporting billions of daily advertising requests. Key contributor to platform modernization, revenue-generating product features, and production incident response.
 
-#### Senior Software Engineer / Lead Support Engineer — *2020 - Present*
-- Contributed to .NET Framework to .NET Core efforts, completed on-prem to cloud-native migration, and decomposed monolith components into microservices.
-- Originated the Web Push ad format, built the initial prototype and early integrations, and led expansion of the format.
-- Led production support and incident response, implemented Cloudflare edge controls, and enhanced diagnostics with New Relic and Kibana.
-- Owned fraud mitigation initiatives within the delivery pipeline to improve traffic quality and revenue integrity.
-- Implemented a rules engine microservice for real-time tracking (Apache Druid) and automated campaign management, reducing manual interventions for account managers and clients.
+#### Senior Software Engineer & Lead Support Engineer — *2020 - Present*
+- Led migration of key platform components from .NET Framework to .NET Core, modernizing the platform architecture, decomposing monolith components into microservices, and supporting transition from on-prem infrastructure to cloud-native deployments.
+- Originated and prototyped the Web Push advertising format, collaborating with business stakeholders and engineering teams to launch and expand a new revenue-generating ad product.
+- Led production reliability initiatives including incident response, observability improvements, and edge traffic management using Cloudflare, New Relic, and Kibana.
+- Owned fraud mitigation systems within the ad delivery pipeline, improving traffic quality and protecting platform revenue integrity.
+- Designed and implemented a rules-based microservice platform using Apache Druid for real-time campaign tracking and automation, reducing manual operations for internal teams and clients.
 
-#### Software Engineer II / Support Engineer — *2014 - 2020*
-- Led ad delivery compatibility work under common AdBlock and content-blocker techniques, owned ad unit scripts and tags across browser and partner constraints.
-- Tuned request-path data flows with MongoDB and Redis, improving hot codepaths for performance and maintainability.
+#### Software Engineer II & Support Engineer — *2014 - 2020*
+- Led platform compatibility work across AdBlock and browser content-blocking mechanisms; owned ad unit scripts and tags across browser and partner constraints.
+- Optimized request-path data flows with MongoDB and Redis, improving performance and maintainability.
 - Implemented pub/sub messaging to propagate database updates to live serving nodes, enabling in-memory entity lookups and reducing database reads on the request path.
-- Served as escalation point for complex production issues, bridging client-side tag behavior and backend delivery logic, and drove code and design reviews.
+- Served as an escalation point for complex production issues, bridging client-side ad delivery behavior with backend platform logic while contributing to architecture discussions and code reviews.
 
 #### Software Engineer — *2011 - 2014*
-- Helped start the platform on a new stack, delivered customer-facing interfaces, and built reporting and analytics workflows.
-- Built SQL-based reporting and analytics workflows to support business and operational needs.
-- Expanded and maintained ad unit delivery scripts and tags as platform scope and partner integrations grew.
+- Helped build early versions of the ad serving platform, delivering customer-facing interfaces and foundational reporting and analytics capabilities.
+- Built SQL-based reporting systems used internally for operational analytics and business insights.
+- Expanded and maintained ad unit delivery scripts and partner integrations as platform scale and demand grew.
 
 ---
 
 ### Software Engineer (Concurrent)
 **EventSorbet** | *December 2011 - April 2013* | Santa Monica, CA
 
-An early-stage startup developing an event management platform, I worked as a Software Engineer, primarily focused on building and enhancing core platform features.
+Early-stage startup developing an event management platform. Worked on core platform capabilities and payment infrastructure.
 
 **Key Contributions:**
-- Collaborated with the founding team on the initial setup of the platform stack using ASP.NET MVC, NHibernate ORM, JavaScript/jQuery for the UI, and Git for version control, ensuring efficient development and collaboration
-- Developed and optimized the event search feature, which became the primary method of interacting with the platform
-- Integrated Stripe payment service to enable credit card checkout, manage subscriptions, and streamline event vendor payouts, reducing manual processing for the internal team
+- Collaborated with founding engineers to establish the initial platform stack using ASP.NET MVC, NHibernate ORM, and JavaScript/jQuery.
+- Designed and optimized the event search functionality that became the primary user interaction workflow.
+- Integrated Stripe payment processing for subscriptions and vendor payouts, automating payment workflows and reducing manual operational work.
 
 ---
 
 ### Student Programmer
 **University of Southern California** | *October 2010 - May 2011* | Los Angeles, CA
 
-Worked at the School of Pharmacy developing in-house custom web and database applications in VB.NET.
+Worked at the School of Pharmacy developing custom web and database applications in VB.NET.
 
 **Responsibilities:**
-- Developed a time tracking system for employees, enhancing operational efficiency
-- Maintained, tested, and documented code for internal employee support applications
+- Built internal employee time-tracking software to improve operational efficiency.
+- Maintained and enhanced internal web applications used by university staff.
 
 ---
 
 ### Associate Intern
 **OnGreen** | *May 2010 - August 2010* | Los Angeles, CA
 
-Joined a Series A startup focused on building an online platform to help green startups connect with investors and raise capital.
+Series A startup building an online platform connecting green startups with investors and facilitating capital raises.
 
 **Accomplishments:**
-- Collaborated with offshore engineering team to test and resolve platform bugs
-- Set up and managed a support ticketing system using osTicket on a managed LAMP stack server
-- Configured and maintained a phpBB user forum on the LAMP stack to facilitate interaction between platform stakeholders
+- Collaborated with an offshore engineering team to test and resolve platform issues.
+- Deployed and managed osTicket support infrastructure on a LAMP stack.
+- Configured and maintained phpBB community forums for platform users and stakeholders.
 
 ---
 
@@ -110,4 +110,4 @@ I'm always interested in discussing new opportunities, technical challenges, and
 
 ---
 
-*Last updated: January 2026*
+*Last updated: March 2026*
